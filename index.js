@@ -20,7 +20,7 @@ return new Promise(resolve => setTimeout(resolve, ms))
 nocache('./imp.js', module => console.log(color('|TRM|'), color(`${module} Updated!`, 'cyan')))
 
 async function starts() {
-.autoReconnect = ReconnectMode.onConnectionLost
+impo.autoReconnect = ReconnectMode.onConnectionLost
     impo.version = [2, 2119, 6]
     impo.logger.level = 'warn'
     impo.browserDescription = ['F','Desktop','3.0']
