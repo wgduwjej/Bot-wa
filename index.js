@@ -119,60 +119,7 @@ const buttonMessages = { imageMessage: mhan.message.imageMessage,
 contentText: `${keluar}`,
 footerText: `Leave Information`,
 buttons: gbutsan,
-headerType: 4 }
-			denz.sendMessage(mdata.id, buttonMessages, MessageType.buttonsMessage, { thumbnail: fs.readFileSync('./denz.jpg'), "contextInfo": { mentionedJid: [num]}, caption: 'Tes', quoted: fkontakk})
-			} else if (anu.action == 'promote') {
-fkontakk = { key: { fromMe: false, participant: `0@s.whatsapp.net`, ...(anu.jid ? { remoteJid: '6283136505591-1604595598@g.us' } : {})}, message: { "contactMessage":{"displayName": `${mdata.subject}`,"vcard":`BEGIN:VCARD\nVERSION:3.0\nN:2;Denz;;;\nFN:Denz\nitem1.TEL;waid=6281337541779:6281337541779\nitem1.X-ABLabel:Mobile\nEND:VCARD` }}}
-shp = '◦➛'
-var thu = await denz.getStatus(anu.participants[0], MessageType.text)
-num = anu.participants[0]
-teks = `*P R O M O T E - D E T E C T E D*\n\n${shp} Username: @${num.split('@')[0]}\n\n${shp} Bio : ${thu.status}\n\n${shp} Time : ${moment.tz('Asia/Jakarta').format('DD/MM HH:mm:ss')}\n\n${shp} Group: ${mdata.subject}\n\nDon't break the rules!`
-denz.sendMessage(mdata.id, teks, MessageType.text, {contextInfo: {"mentionedJid": [num]}, quoted: fkontakk})
-console.log(color('|TRM|'), color(`Promote Member ${num.split('@')[0]} In ${mdata.subject}`,  'cyan'))
-} 
-else if (anu.action == 'demote') {
-fkontakk = { key: { fromMe: false, participant: `0@s.whatsapp.net`, ...(anu.jid ? { remoteJid: '6283136505591-1604595598@g.us' } : {})}, message: { "contactMessage":{"displayName": `${mdata.subject}`,"vcard":`BEGIN:VCARD\nVERSION:3.0\nN:2;Denz;;;\nFN:Denz\nitem1.TEL;waid=6281337541779:6281337541779\nitem1.X-ABLabel:Mobile\nEND:VCARD` }}}
-shp = '◦➛'
-thu = await denz.getStatus(anu.participants[0], MessageType.text)
-num = anu.participants[0]
-teks = `*D E M O T E - D E T E C T E D*\n\n${shp} Username: @${num.split('@')[0]}\n\n${shp} Bio : ${thu.status}\n\n${shp} Time : ${moment.tz('Asia/Jakarta').format('DD/MM HH:mm:ss')}\n\n${shp} Group: ${mdata.subject}`
-denz.sendMessage(mdata.id, teks, MessageType.text, {contextInfo: {"mentionedJid": [num]}, quoted: fkontakk})
-console.log(color('|TRM|'), color(`Demote Admin ${num.split('@')[0]} In ${mdata.subject}`,  'cyan'))
-}
-		    } catch (e) {
-			console.log('Error : %s', color(e, 'red'))
-		    }
-	        })	       
-
-	denz.on('group-update', async (anu) => {
-		const metdata = await denz.groupMetadata(anu.jid)
-    	const fkontakk = { key: { fromMe: false, participant: `0@s.whatsapp.net`, ...(anu.jid ? { remoteJid: '6283136505591-1604595598@g.us' } : {})}, message: { "contactMessage":{"displayName": `${metdata.subject}`,"vcard":`BEGIN:VCARD\nVERSION:3.0\nN:2;Denz;;;\nFN:Denz\nitem1.TEL;waid=6285866295942:6285866295942\nitem1.X-ABLabel:Mobile\nEND:VCARD` }}}
-    if(anu.announce == 'false'){
-    teks = `- [ Group Opened ] -\n\n_Group telah dibuka oleh admin_\n_Sekarang semua member bisa mengirim pesan_`
-    denz.sendMessage(metdata.id, teks, MessageType.text, {quoted: fkontakk})
-    console.log(color('|TRM|'), color(`Group Opened In ${metdata.subject}`, 'cyan'))
-  }
-  else if(anu.announce == 'true'){
-    teks = `- [ Group Closed ] -\n\n_Group telah ditutup oleh admin_\n_Sekarang hanya admin yang dapat mengirim pesan_`
-    denz.sendMessage(metdata.id, teks, MessageType.text, {quoted: fkontakk})
-    console.log(color('|TRM|'), color(`Group Closed In ${metdata.subject}`,  'cyan'))
-  }
-  else if(!anu.desc == ''){
-    tag = anu.descOwner.split('@')[0] + '@s.whatsapp.net'
-    teks = `- [ Group Description Change ] -\n\nDeskripsi Group telah diubah oleh Admin @${anu.descOwner.split('@')[0]}\n• Deskripsi Baru : ${anu.desc}`
-    denz.sendMessage(metdata.id, teks, MessageType.text, {contextInfo: {"mentionedJid": [tag]}, quoted: fkontakk})
-    console.log(color('|TRM|'), color(`Group Description Change In ${metdata.subject}`, 'cyan'))
-  }
-  else if(anu.restrict == 'false'){
-    teks = `- [ Group Setting Change ] -\n\nEdit Group info telah dibuka untuk member\nSekarang semua member dapat mengedit info Group Ini`
-    denz.sendMessage(metdata.id, teks, MessageType.text, {quoted: fkontakk})
-    console.log(color('|TRM|'), color(`Group Setting Change In ${metdata.subject}`, 'cyan'))
-  }
-  else if(anu.restrict == 'true'){
-    teks = `- [ Group Setting Change ] -\n\nEdit Group info telah ditutup untuk member\nSekarang hanya admin group yang dapat mengedit info Group Ini`
-    denz.sendMessage(metdata.id, teks, MessageType.text, {quoted: fkontakk})
-    console.log(color('|TRM|'), color(`Group Setting Change In ${metdata.subject}`,  'cyan'))
-  }
+headerType: 4 }			
 })
 
 denz.on('CB:action,,call', async json => {
