@@ -31,13 +31,6 @@ Ya gw cuma gabut doang sih hehe
 </p>
 <h2 align="center">🔥 SPOTIFY 🔥</h2>
 <p align="center">
-  <script>
-  function play(){
-       var audio = document.getElementById("audio");
-       audio.play();
-                 }
-   </script>
-
   <input type="button" value="PLAY MUSIC"  onclick="play()">
 <audio id="audio" src="https://g.top4top.io/m_1798kt6601.mp3"></audio>
 </p>
