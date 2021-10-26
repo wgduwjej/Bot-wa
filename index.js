@@ -122,7 +122,6 @@ buttons: gbutsan,
 headerType: 4 }
 			denz.sendMessage(mdata.id, buttonMessages, MessageType.buttonsMessage, { thumbnail: fs.readFileSync('./imp.jpg'), "contextInfo": { mentionedJid: [num]}, caption: 'Tes', quoted: fkontakk})
   }
-})
 
 denz.on('CB:action,,call', async json => {
         const callerId = json[2][0][1].from;
