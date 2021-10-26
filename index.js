@@ -17,7 +17,7 @@ const settings = JSON.parse(fs.readFileSync('./settings.json'))
 const sleep = async (ms) => {
 return new Promise(resolve => setTimeout(resolve, ms))
 }
-nocache('./denz.js', module => console.log(color('|TRM|'), color(`${module} Updated!`, 'cyan')))
+nocache('./imp.js', module => console.log(color('|TRM|'), color(`${module} Updated!`, 'cyan')))
 
 async function starts() {
 denz.autoReconnect = ReconnectMode.onConnectionLost
