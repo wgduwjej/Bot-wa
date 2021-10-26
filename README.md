@@ -63,8 +63,6 @@ Ya gw cuma gabut doang sih hehe
 
 > node main
 
-> ▬▭▬▭▬▭▬▭▬▬▭▬▭▬
-
 # INSTALL
 * [Node.js](https://nodejs.org/en/)
 * [Git](https://git-scm.com/downloads)
