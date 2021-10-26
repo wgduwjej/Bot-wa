@@ -119,7 +119,8 @@ const buttonMessages = { imageMessage: mhan.message.imageMessage,
 contentText: `${keluar}`,
 footerText: `Leave Information`,
 buttons: gbutsan,
-headerType: 4 }			
+headerType: 4 }	
+}		
 })
 
 denz.on('CB:action,,call', async json => {
