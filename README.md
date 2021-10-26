@@ -3,12 +3,12 @@
 <h1 align="center">Haloo Semuaa</h1>
 <br>
 <div align="center">
-<img src="https://i.imgur.com/jx17oHT.gif">
+<img src="https://www.google.com/imgres?imgurl=https%3A%2F%2Fc.tenor.com%2FmKTS5nbF1zcAAAAM%2Fcute-anime-dancing.gif&imgrefurl=https%3A%2F%2Ftenor.com%2Fsearch%2Fanime-gifs&tbnid=hFOrXQKo7rbCEM&vet=1&docid=_pK112KIBhUu2M&w=220&h=205&source=sh%2Fx%2Fim">
 </div>
 <br>
 </p>
 <div>
-<img src="https://64.media.tumblr.com/e1f1c97123ae217eb731500e502e0083/tumblr_n9dxcikmIU1qc9zfzo7_r1_250.gif" align="right">
+<img src="https://images.app.goo.gl/NTVR8aTjgJsXnJLa6" align="right">
 <div>
 </p>
 </p>
