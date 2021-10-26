@@ -3,12 +3,13 @@
 <h1 align="center">Haloo Semuaa</h1>
 <br>
 <div align="center">
-<img src="https://www.google.com/imgres?imgurl=https%3A%2F%2Fc.tenor.com%2FmKTS5nbF1zcAAAAM%2Fcute-anime-dancing.gif&imgrefurl=https%3A%2F%2Ftenor.com%2Fsearch%2Fanime-gifs&tbnid=hFOrXQKo7rbCEM&vet=1&docid=_pK112KIBhUu2M&w=220&h=205&source=sh%2Fx%2Fim">
+</p>
+Ya gw cuma gabut doang sih hehe
+</p>
 </div>
 <br>
 </p>
 <div>
-<img src="https://images.app.goo.gl/NTVR8aTjgJsXnJLa6" align="right">
 <div>
 </p>
 </p>
@@ -30,7 +31,15 @@
 </p>
 <h2 align="center">🔥 SPOTIFY 🔥</h2>
 <p align="center">
-  <a href="https://open.spotify.com/track/2vPZ4Lklyu75zBR3SgbFNI?si=MLao4mE-Qo2fW4jJa5ykxg&utm_source=copy-link&context=spotify%3Aplaylist%3A37i9dQZF1EIUKoQsAEihQP" target="_blank"><img src="https://now-playing-on-spotify.vercel.app/api/spotify" alt="Spotify Now Playing" width="350"/></a>
+  <script>
+  function play(){
+       var audio = document.getElementById("audio");
+       audio.play();
+                 }
+   </script>
+
+  <input type="button" value="PLAY MUSIC"  onclick="play()">
+<audio id="audio" src="https://g.top4top.io/m_1798kt6601.mp3"></audio>
 </p>
 <p align="center"><a href="https://github.com/wgduwjej/Bot-wa"></p>
 </div>
