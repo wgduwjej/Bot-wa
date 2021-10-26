@@ -30,7 +30,7 @@
 </p>
 <h2 align="center">🔥 SPOTIFY 🔥</h2>
 <p align="center">
-  <a href="https://open.spotify.com/track/4bNvS25ZVMCvLHEUV87mp4?si=yb1PaPVnRgiTYedy8r6i_g&utm_source=copy-link&context=spotify%3Aplaylist%3A37i9dQZF1EIVoBTSiHHsdx&dl_branch=1" target="_blank"><img src="https://now-playing-on-spotify.vercel.app/api/spotify" alt="Spotify Now Playing" width="350"/></a>
+  <a href="https://open.spotify.com/track/2vPZ4Lklyu75zBR3SgbFNI?si=MLao4mE-Qo2fW4jJa5ykxg&utm_source=copy-link&context=spotify%3Aplaylist%3A37i9dQZF1EIUKoQsAEihQP" target="_blank"><img src="https://now-playing-on-spotify.vercel.app/api/spotify" alt="Spotify Now Playing" width="350"/></a>
 </p>
 <p align="center"><a href="https://github.com/wgduwjej/Bot-wa"><img src="https://k.top4top.io/p_2050dx69t0.png"></a></p>
 </div>
